@@ -15,7 +15,7 @@ The .apply() method was also introduced where a function is used for every row i
 
 The example given reads:
 
-def splitname(row):
+def splitname(row):/n
 	row['First']=row['President'].split(" ")[0]
 
 df=df.apply(splitname, axis='columns')
@@ -26,6 +26,6 @@ After creating a regex pattern it will extract from a column and apply the patte
 
 (?:) creates a non-capturing group. This excludes it. 
 
-pattern = "(^[\w]+)" 
+pattern = "(^[\w]+)" /n
 df['President'].str.extract(pattern).head()
 
