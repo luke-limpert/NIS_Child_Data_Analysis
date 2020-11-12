@@ -6,10 +6,12 @@ Assignment 2 of the coursera "Data Science for Python".
 The assignment makes use of an introduction to series, dataframes, regex, .where(), .loc, .iloc, pandas, numpy, boolean masking. 
 
 Introduction to scipy in the final question of the assignment. 
+____________________________________________________________________________________________________________________________________________
 
 Mostly used boolean masking, but another method was discussed in the lecture to overload the indexing operator.
 
 df[df['HAD_CPOX']]
+____________________________________________________________________________________________________________________________________________
 
 The .apply() method was also introduced where a function is used for every row in a column.
 
@@ -20,6 +22,7 @@ def splitname(row):
 row['First']=row['President'].split(" ")[0]
 
 df=df.apply(splitname, axis='columns')
+_____________________________________________________________________________________________________________________________________________
 
 Finally the .extract() method was also shown. 
 
